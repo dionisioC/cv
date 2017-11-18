@@ -1,0 +1,194 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+    % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+
+\vspace*{-40pt}
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Dionisio Cort\'es Fern\'andez}}\\
+	https://github.com/dionisioC $\cdot$ cortesfernandezdionisio@gmail.com $\cdot$ https://www.linkedin.com/in/dionisio-cortes-fernandez/?locale=en\_US\\
+\end{center}
+
+\vspace*{2mm}
+
+%==== Education ====%
+\header{Education}
+\textbf{Universidad Rey Juan Carlos}\hfill Madrid, Spain\\
+University course Computer Software Engineering \textit{GPA: PASS} \hfill Grad: July 2016\\
+\vspace{2mm}
+\textbf{Universidad Polit\'ecnica de Madrid (ETSISI)}\hfill Madrid, Spain\\
+Engineer\textquotesingle s Degree  - Engineer Diploma (DI) Software engineering \textit{GPA: 2.33} \hfill Grad: July 2014\\
+\vspace{2mm}
+\textbf{Universidad Polit\'ecnica de Madrid (EUI)}\hfill Madrid, Spain\\
+Diploma of Higher Education (DipHE) Computer Science \textit{GPA: 2.67} \hfill Grad: July 2012\\
+\vspace{2mm}
+\textbf{Universidad Rey Juan Carlos}\hfill Madrid, Spain\\
+University course Computer Science \textit{GPA: PASS} \hfill Grad: July 2011\\
+\vspace{2mm}
+\textbf{IES Prado de Santo Domingo}\hfill Madrid, Spain\\
+Certificate of Higher Education (HNC) Telecommunication \textit{GPA: 2.33} \hfill Grad: July 2005\\
+\vspace{2mm}
+
+\vspace*{2mm}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{Logtrust} \hfill Madrid, Spain\\
+\textit{Profesional service engineering} \hfill January 2017 | Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Insert (etl) and visualise (web apps) data in Logtrust.
+	\item Team leading.
+	\item Requirements gathering and analysis.
+\end{itemize}
+
+\textbf{Yapiko Software House} \hfill Madrid, Spain\\
+\textit{Software Developer} \hfill November 2014 | January 2017\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Develop new features
+	\item Bug fixing
+	\item Help organising the team and managing the tasks
+\end{itemize}
+
+\textbf{Welvi Experience} \hfill Madrid, Spain\\
+\textit{Research and Development Engineer} \hfill March 2013 | September 2013\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Research for improving recommender system
+	\item Recommender system optimisation
+	\item Develop the recommender system
+\end{itemize}
+
+\textbf{Reparalia (Homeserve Group)} \hfill Madrid, Spain\\
+\textit{Technical Support Engineer} \hfill October 2012 | March 2013\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Give support to the in-house software
+	\item Detect and fix bugs
+\end{itemize}
+
+\textbf{Filmaffinity S.L} \hfill Madrid, Spain\\
+\textit{Research and Development Engineer} \hfill January 2012 | October 2012\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Research for improving recommender systems.
+	\item Recommender system optimization.
+	\item Develop the recommender system (item to item).
+	\item Basic web development with HTML and PHP, few JavaScript.
+\end{itemize}
+
+\textbf{RCMJIT} \hfill Madrid, Spain\\
+\textit{Software Developer} \hfill September 2011 | January 2012\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Develop and maintain software.
+\end{itemize}
+
+\textbf{UPM (Universidad Politécnica de Madrid)} \hfill Madrid, Spain\\
+\textit{Software Developer} \hfill January 2010 | September 2011\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Research about metaverses.
+	\item Research about genetic algorithms.
+	\item Research about artificial intelligence.
+	\item Use of Fuzzy controllers.
+	\item Research of algorithms for 3D reconstruction of environments captured as point clouds.
+\end{itemize}
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Programming languages: & (Main) Java, Python, Javascript (Other) C++, C, PHP, VB 6.0, VB.net, ASPX \\
+	Operating systems:     & Linux, osx                                                                \\
+	Version control:       & (Main) Git (Other) svn                                                    \\
+	Databases:             & oracle, mysql, Mongo (Certified DBA and Developer, Associate Level.)      \\
+	Other:                 & Vagrant, Jenkins, Maven, Jira, Confluence, Crucible, Bitbucket, GitLab    \\
+	Other:                 & ITIL V2 Foundation                                                        \\
+	English:               & Toeic score 895 (Oct 2013)                                                \\
+\end{tabular}
+
+\vspace*{2mm}
+
+\header{Projects}
+{\textbf{Welvi} \sl Java, mysql} \hfill http://welvi.com/ (not active)\\
+Welvi helps you transform your lifestyle for an active lifestyle and a healthy diet. Through careful planning and customization, allowing you to reach your goals and know the great benefits that take care. Furthermore, welvi helps you introduce these good habits into your life.\\
+\vspace*{2mm}
+
+\vspace*{2mm}
+
+\header{Awards}
+\textbf{Universidad Polit\'ecnica de Madrid (EUI) First class or Honours} \hfill Madrid, Spain\\
+Data Structures I. Open Systems. Reconfigurable Digital Design. Data Structures II. Fundamentals of Cryptology. Computer Microarchitectures Modelling Using Hardware Description Languages. Real-Time Systems. Operating Systems Administration. Intelligent Agents. Advanced Architectures. Virtual Environments. Management and governance of IT services. Thesis \hfill 2006 - 2012\\
+\vspace*{2mm}
+\textbf{Universidad Polit\'ecnica de Madrid (ETSISI) First class or Honours} \hfill Madrid, Spain\\
+Project and Risk Management. Software Quality. Thesis. \hfill 2013 - 2014\\
+\vspace*{2mm}
+
+\ 
+\end{document}
