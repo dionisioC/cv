@@ -3,11 +3,13 @@
     \usepackage{amsmath}
     \usepackage{amssymb}
     \usepackage{textcomp}
+    \usepackage{hyperref}
+    \usepackage{graphicx}
     \textheight=10in
     \pagestyle{empty}
     \raggedright
 
-    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\encodingdefault}{cg}
 %\renewcommand{\rmdefault}{lgrcmr}
 
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
@@ -70,7 +72,7 @@
 \vspace*{-10pt}
 \begin{center}
 	{\Huge \scshape {Dionisio Cort\'es Fern\'andez}}\\
-	https://github.com/dionisioC $\cdot$ cortesfernandezdionisio@gmail.com $\cdot$ https://www.linkedin.com/in/dionisio-cortes-fernandez/?locale=en\_US\\
+	$\cdot$ \includegraphics[totalheight=0.4cm]{images/Octocat.jpg} \url{https://github.com/dionisioC} $\cdot$ \includegraphics[totalheight=0.4cm]{images/gmail.png} cortesfernandezdionisio@gmail.com\\$\cdot$ \includegraphics[totalheight=0.3cm]{images/linkedin-icon.png} \url{https://www.linkedin.com/in/dionisio-cortes-fernandez/?locale=en\_US}\\
 \end{center}
 
 \vspace*{2mm}
@@ -78,106 +80,113 @@
 %==== Education ====%
 \header{Education}
 \textbf{Universidad Rey Juan Carlos}\hfill Madrid, Spain\\
-University course Computer Software Engineering \textit{GPA: PASS} \hfill Grad: July 2016\\
+Master’s Degree (M): Development and deployment of applications in the cloud \hfill Grad: -\\
 \vspace{2mm}
 \textbf{Universidad Polit\'ecnica de Madrid (ETSISI)}\hfill Madrid, Spain\\
-Engineer\textquotesingle s Degree  - Engineer Diploma (DI) Software engineering \textit{GPA: 2.33} \hfill Grad: July 2014\\
+Engineer\textquotesingle s Degree  - Engineer Diploma (DI) Software engineering \hfill Grad: July 2014\\
 \vspace{2mm}
 \textbf{Universidad Polit\'ecnica de Madrid (EUI)}\hfill Madrid, Spain\\
-Diploma of Higher Education (DipHE) Computer Science \textit{GPA: 2.67} \hfill Grad: July 2012\\
+Diploma of Higher Education (DipHE) Computer Science \hfill Grad: July 2012\\
 \vspace{2mm}
-\textbf{Universidad Rey Juan Carlos}\hfill Madrid, Spain\\
-University course Computer Science \textit{GPA: PASS} \hfill Grad: July 2011\\
-\vspace{2mm}
-\textbf{IES Prado de Santo Domingo}\hfill Madrid, Spain\\
-Certificate of Higher Education (HNC) Telecommunication \textit{GPA: 2.33} \hfill Grad: July 2005\\
 \vspace{2mm}
 
+%==== Courses ====%
+\header{Courses}
+\textbf{Universidad Rey Juan Carlos}\hfill Madrid, Spain\\
+University course Computer Software Engineering (Web development) \hfill Grad: July 2016\\
+\vspace{2mm}
+\textbf{Universidad Rey Juan Carlos}\hfill Madrid, Spain\\
+University course Computer Science (Servers with free software) \hfill Grad: July 2011\\
 \vspace*{2mm}
 
 %==== Experience ====%
 \header{Experience}
 \vspace{1mm}
 
-
-\textbf{EpicLabs.io/Lightflow.media/Haivision} \hfill Madrid, Spain\\
-\textit{Software Engineer} \hfill August 2018 | Present\\
+\textbf{Teva (Tecnologias Viales Aplicadas)} \hfill Madrid, Spain\\
+\textit{Software Engineer} \hfill April 2021 | Present\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-    \item Developing and maintaining a wide range of projects from Java and node to python and a bit of front with angular.
-    \item Rest API with nodejs (typescript), and backend services with python.
-    \item A little bit of front-end with angular.
+    \item Backend developer using Springboot, mybatis, sqitch to develop microservices.
+    \item Trying to use and spread good development practices like testing for example.
+\end{itemize}
+
+
+\textbf{EpicLabs.io/Lightflow.media/Haivision} \hfill Madrid, Spain\\
+\textit{Software Engineer} \hfill August 2018 | April 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item I have been involved in a wide range of projects, mostly of media, artificial intelligence and blockchain.
+    \item I finished a project based on nodeJS to configure multiple CDNs and based on some parameters the request were transformed to go to a certain CDN to provide the content.
+    \item We started a POC (Proof of concept) that involved image/pdf to text. To verify the POC, I made a small project to convert into text the inputs. \href{https://github.com/dionisioC/pythonOCR}{here}.
+    \item We provided help to continue the development of a legacy project we made in order to be able to categorice all services with all options and different configurations. This was done in Angular JS, Java, Liquibase and Docker.
+    \item We helped livePeer with verificating transcodings \href{https://github.com/livepeer/verification-classifier}{here}. Verifications are mainly done in python.  I gattered sample assets to train the model, developed the needed scenarios to train it, containerize the solution and provided help to the machine learning team.
+    \item I was moved to the Lightflow team were I keep developing and evolving the product. At the backend side, we used Typescript on a Typescript application. With Python, I developed new features for processing assets. Also, I was involved in new services, using Go and Apache Flink. 
+At the frontend side, I developed new features using Angular. I was never afraid of picking frontend tasks, and asking for help when needed. On that side, I was part of the new lightflow implementation in the new customers like this one \href{https://www.linkedin.com/posts/jesusoliva_intelligent-encoding-drives-dramatic-cost-activity-6709093686086647808-ruhL}{this one}
 \end{itemize}
 
 \textbf{Devo (formerly kown as logtrust)} \hfill Madrid, Spain\\
 \textit{Profesional service engineering} \hfill January 2017 | August 2018\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-	\item Insert (etl) and visualise (web apps) data in Logtrust.
-	\item Team leading.
-	\item Requirements gathering and analysis.
+	\item I was part of the professional services engineering team, working with telcos inserting data into the platform via steaming or with etls.  After the data was ingested, we provided custom applications to make easier for them to analyze the data. This save them the need to perform Linq queries..
+	\item As part of the team, I manage, gather and analyzed requirements, replacing the existing solution for a new and most efficient one.  We paid extra attention to solution's performance to make sure we improved from the previous state. We did several tests with iperf, and we also explored alternative languages, such as Julia, to reach better performance than the existing Python applications.
+	\item Along with other performance improvements, I prepared a talk about it, which can be \href{https://github.com/dionisioC/pythonPerformance}{here}. Also, I tried to share the good practices I knew with the team, like code reviews, branching, etc.
+	\item In order to increase the development experience when testing some ETL deployments, I created a vagran machine to facilitate the task, and it can be found \href{https://github.com/dionisioC/azkaban_in_vagrant_with_ansible}{here}. 
+
 \end{itemize}
 
 \textbf{Yapiko Software House} \hfill Madrid, Spain\\
 \textit{Software Developer} \hfill November 2014 | January 2017\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-	\item Develop new features
-	\item Bug fixing
-	\item Help organising the team and managing the tasks
+	\item I was focused on a betting sport application in an international enviroment.  The application wasd eveloped in core Java (not used java 8 version).  We develop new features such as cash out.  This development included the integration of the new feature and database patches using liquibase. We were using svn as CVS and we migrated to git in the end.
+	\item I worked fixing bugs from easy ones to small memory leaks that were more complex.In order to improve the development process I created a vagrant machine that simulated the database environment. Testing patches locally was as easy as destroy the machine and spin it up again. Also, I saved time as I created new releases with the system patched up to the last release.
+	\item I shared knowledge with the team on different technologies such us MongoDB. We made some brown bags sessions.
+	\item As we were a small team, I helped organising the team and managing the tasks in coordination with the project managers to be more agile. As a result, the whole team was working on the same feature.
 \end{itemize}
 
 \textbf{Welvi Experience} \hfill Madrid, Spain\\
 \textit{Research and Development Engineer} \hfill March 2013 | September 2013\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-	\item Research for improving recommender system
-	\item Recommender system optimisation
-	\item Develop the recommender system
+	\item I developed and improved the recommender system.
 \end{itemize}
 
 \textbf{Reparalia (Homeserve Group)} \hfill Madrid, Spain\\
 \textit{Technical Support Engineer} \hfill October 2012 | March 2013\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-	\item Give support to the in-house software
-	\item Detect and fix bugs
+	\item I developed new features, fixed bugs using Progress 4GL in the membership team.
 \end{itemize}
 
 \textbf{Filmaffinity S.L} \hfill Madrid, Spain\\
 \textit{Research and Development Engineer} \hfill January 2012 | October 2012\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-	\item Research for improving recommender systems.
-	\item Recommender system optimization.
-	\item Develop the recommender system (item to item).
-	\item Basic web development with HTML and PHP, few JavaScript.
+	\item I improved and optimized recommender systems, developing an item to item one.
 \end{itemize}
 
 \textbf{RCMJIT} \hfill Madrid, Spain\\
 \textit{Software Developer} \hfill September 2011 | January 2012\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-	\item Develop and maintain software.
+	\item I developed and maintained software mainly in .net for microsoft environments.
 \end{itemize}
 
 \textbf{UPM (Universidad Politécnica de Madrid)} \hfill Madrid, Spain\\
 \textit{Software Developer} \hfill January 2010 | September 2011\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-	\item Research about metaverses.
-	\item Research about genetic algorithms.
-	\item Research about artificial intelligence.
-	\item Use of Fuzzy controllers.
-	\item Research of algorithms for 3D reconstruction of environments captured as point clouds.
+	\item I researched metaverses, genetic algorithms, fuzzy controllers.
 \end{itemize}
 
 \header{Skills}
 \begin{tabular}{ l l }
 	Programming languages: & Java, Python, Javascript                                                  \\
-	Operating systems:     & Linux, osx                                                                \\
+	Operating systems:     & Linux, OSX                                                                \\
 	Version control:       & Git                                                                       \\
-	Databases:             & oracle, mysql, Mongo (Certified DBA and Developer, Associate Level.)      \\
+	Databases:             & oracle, mysql, Mongo (Certified DBA and Developer, Associate Level (2.4)) \\
 	Other:                 & Vagrant, Jenkins, Maven, Jira, Confluence, Crucible, Bitbucket, GitLab    \\
 	Other:                 & ITIL V2 Foundation, Docker, Kubernetes                                    \\
 	English:               & Toeic score 895 (Oct 2013)                                                \\
